@@ -1,7 +1,7 @@
 #![cfg(feature = "bigdecimal")]
 
 extern crate bigdecimal;
-
+use sqlite::types::numeric::bigdecimal::FromPrimitive;
 use self::bigdecimal::BigDecimal;
 
 use deserialize::{self, FromSql};
